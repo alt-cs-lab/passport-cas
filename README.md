@@ -1,16 +1,18 @@
 # passport-cas
 
 Cas authentication strategies for Passport.
-This is an updated fork of https://github.com/sadne/passport-cas.
+This is an updated fork of https://github.com/sadne/passport-cas and https://github.com/coursetable/passport-cas.
 
 
 ## Install
 
-    $ npm install passport-cas
+    $ npm install https://github.com/alt-cs-lab/passport-cas/
+
+** README below is retained from original but may be outdated. See https://textbooks.cs.ksu.edu/cis526/x-examples/04-authentication/ for a detailed walkthrough. **
 
 #### Configure Strategy
 
-    passport.use(new (require('passport-cas').Strategy)({
+    passport.use(new (require('@alt-cs-lab/passport-cas').Strategy)({
       ssoBaseURL: 'http://www.example.com/',
       serverBaseURL: 'http://localhost:3000'
     }, function(login, done) {
